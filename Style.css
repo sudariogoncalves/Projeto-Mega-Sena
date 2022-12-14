@@ -1,0 +1,17 @@
+.fundodetela {
+    background-color: #d3d3d3;
+    text-align: center;
+    
+  }
+  .botoes {
+    border-radius: 20px;
+    border-color: #fff;
+  }
+  
+  .margem {
+  margin-left: 315px;
+  }
+
+  .ncentralizado {
+   text-align: center;
+  }

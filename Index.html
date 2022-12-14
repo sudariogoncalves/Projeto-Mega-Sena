@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mega Sena</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body class="fundodetela">
+
+    <h1>Projeto Mega Sena</h1>
+    <h4 align-center="justify">Este sistema é uma simulação de um jogo da Mega Sena,
+        você <br>inclui 6 numeros e terá como resultado a quantidade de pontos<br>
+        em acerto, segundo um resultado existente. Faça sua aposta:<br>
+    </h4>
+     
+    
+    <span> Informe o 1º numero: </span> 
+    <input type="text"  class="ncentralizado" onchange="VerificarNumero(this)"  id="numero1" size="1" maxlength="2"><br><br>
+    <span> Informe o 2º numero: </span>
+    <input type="text" class="ncentralizado" onchange="VerificarNumero(this)"   id="numero2" size="1" maxlength="2"><br><br>
+    <span> Informe o 3º numero: </span>
+    <input type="text" class="ncentralizado" onchange="VerificarNumero(this)"   id="numero3" size="1" maxlength="2"><br><br>
+    <span> Informe o 4º numero: </span>
+    <input type="text" class="ncentralizado" onchange="VerificarNumero(this)"   id="numero4" size="1" maxlength="2"><br><br>
+    <span> Informe o 5º numero: </span>
+    <input type="text" class="ncentralizado" onchange="VerificarNumero(this)"   id="numero5" size="1" maxlength="2"><br><br>
+    <span> Informe o 6º numero: </span>
+    <input type="text" class="ncentralizado" onchange="VerificarNumero(this);HabilitaBotaoJogar()" id="numero6" size="1" maxlength="2"><br><br>
+    
+    
+    <div>  
+        <input disabled="true" type=button class="botoes" id="jogar" onclick="Jogar()" value="          Jogar          ">
+        <input type="button" class="botoes" id="jogarnovamente" onclick="JogarNovamente()" value="Jogar Novamente"><br><br>
+    </div>
+
+    <div id="resultado">
+    </div><br>
+
+    <input type=button class="botoes" onclick="SairDoSitema()" value="                  Sair do sistema                   ">
+
+    </div><br><br><br>
+    <footer>Direitos reservados a Sudário O Gonçalves - 4ºPeríodo - UNA/Contagem - 12/2022
+    </footer>
+    </div>
+
+</body>
+
+</html>
+
